@@ -1,8 +1,11 @@
-#creating a simple function
-def my_function(fname):
-  print(fname + " Goslee")
+from calendar import weekday
+from datetime import datetime
+from time import strftime 
 
-my_function("Trenisha")
-my_function("Deshaunte")
+def good_morning(day):
+  weekday=datetime.today().strftime("%A")
+  print(f"Good morning? Happy {day}~")
+
+good_morning("friday")
 
 
